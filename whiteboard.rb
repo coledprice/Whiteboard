@@ -32,12 +32,29 @@
 # Input: [4, 2, 5, 99, -4]
 # Output: [8, 4, 10, 198, -8]
 
-def doubled(numbers)
-  new_array = []
+# def doubled(numbers)
+#   new_array = []
+#   numbers.each do |number|
+#     new_array << number * 2
+#   end
+#   puts new_array
+# end
+
+# doubled([4, 2, 5, 99, -4])
+
+# Write a function that returns the greatest value from an array of numbers.
+
+# Input: [5, 17, -4, 20, 12]
+# Output: 20
+
+def greatest_value(numbers)
+  greatest_number = 0
   numbers.each do |number|
-    new_array << number * 2
+    if number > greatest_number
+      greatest_number = number
+    end
   end
-  puts new_array
+  puts greatest_number
 end
 
-doubled([4, 2, 5, 99, -4])
+greatest_value([5, 17, -4, 20, 12])
