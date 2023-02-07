@@ -81,14 +81,27 @@
 # Input: [1, 2, 3, 4, 5]
 # Output: [5, 4, 3, 2, 1]
 
-def reverse(numbers)
-  new_array = []
-  index = numbers.length
-  while index > -1
-    new_array << numbers[index]
-    index = index - 1
-  end
-  puts new_array
+# def reverse(numbers)
+#   new_array = []
+#   index = numbers.length
+#   while index > -1
+#     new_array << numbers[index]
+#     index = index - 1
+#   end
+#   puts new_array
+# end
+
+# reverse([1, 2, 3, 4, 5])
+
+# Given an array of numbers, write a function that returns a new array in which only select numbers from the original array are included, based on the following details:
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+def reverse_string(string)
+  puts string.reverse
 end
 
-reverse([1, 2, 3, 4, 5])
+reverse_string("abcde")
