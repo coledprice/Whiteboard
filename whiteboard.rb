@@ -100,8 +100,16 @@
 # Input: “abcde”
 # Output: “edcba”
 
-def reverse_string(string)
-  puts string.reverse
+# def reverse_string(string)
+#   puts string.reverse
+# end
+
+# reverse_string("abcde")
+
+# Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+
+def doubled(number)
+  return number * 2
 end
 
-reverse_string("abcde")
+p doubled(8)
