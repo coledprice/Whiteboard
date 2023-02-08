@@ -116,8 +116,16 @@
 
 # Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
 
-def capitalize(string)
-  return string.upcase
+# def capitalize(string)
+#   return string.upcase
+# end
+
+# p capitalize("good morning")
+
+# Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+
+def subtract(number1, number2)
+  return number1 - number2
 end
 
-p capitalize("good morning")
+p subtract(20, 4)
