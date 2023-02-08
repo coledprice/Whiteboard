@@ -148,8 +148,16 @@
 
 # Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
-def combine(string1, string2, string3)
-  return string1 + " " + string2 + " " + string3
+# def combine(string1, string2, string3)
+#   return string1 + " " + string2 + " " + string3
+# end
+
+# p combine("hey", "whats", "up")
+
+# Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+
+def number_becomes_string(number)
+  return number.to_s
 end
 
-p combine("hey", "whats", "up")
+p number_becomes_string(4)
