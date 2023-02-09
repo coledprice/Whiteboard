@@ -170,8 +170,16 @@
 # Input: “abcdefghijklmnopqrstuvwxyz”
 # Output: false
 
-def show_money(string)
-  return string.include?("$")
+# def show_money(string)
+#   return string.include?("$")
+# end
+
+# p show_money("abcdefghijklmnopqrstuvwxyz")
+
+# Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+def repeat(string)
+  return string * 5
 end
 
-p show_money("abcdefghijklmnopqrstuvwxyz")
+p repeat("hello")
