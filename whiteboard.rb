@@ -156,8 +156,22 @@
 
 # Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
-def number_becomes_string(number)
-  return number.to_s
+# def number_becomes_string(number)
+#   return number.to_s
+# end
+
+# p number_becomes_string(4)
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+def show_money(string)
+  return string.include?("$")
 end
 
-p number_becomes_string(4)
+p show_money("abcdefghijklmnopqrstuvwxyz")
