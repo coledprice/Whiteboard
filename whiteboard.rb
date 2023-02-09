@@ -178,8 +178,16 @@
 
 # Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
-def repeat(string)
-  return string * 5
+# def repeat(string)
+#   return string * 5
+# end
+
+# p repeat("hello")
+
+# Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+def average(number1, number2, number3)
+  return (number1 + number2 + number3) / 3
 end
 
-p repeat("hello")
+p average(2, 6, 7)
