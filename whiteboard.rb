@@ -202,10 +202,18 @@
 
 # Write a while loop to print the numbers 1 through 10.
 
+# index = 0
+# x = 1
+# while index < 10
+#   puts x
+#   x = x + 1
+#   index += 1
+# end
+
+# Write a while loop that prints the word "hello" 5 times.
+
 index = 0
-x = 1
-while index < 10
-  puts x
-  x = x + 1
+while index < 5
+  puts "hello"
   index += 1
 end
