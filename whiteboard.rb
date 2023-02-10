@@ -212,8 +212,16 @@
 
 # Write a while loop that prints the word "hello" 5 times.
 
+# index = 0
+# while index < 5
+#   puts "hello"
+#   index += 1
+# end
+
+# Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
 index = 0
-while index < 5
-  puts "hello"
-  index += 1
+while index < 101
+  puts index
+  index += 5
 end
