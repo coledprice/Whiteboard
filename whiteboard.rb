@@ -228,9 +228,17 @@
 
 # Create an array to store 3 words. Then add two more words to the array and print the array on one line.
 
-array = ["hello", "good morning", "bye"]
+# array = ["hello", "good morning", "bye"]
 
-array << "whats up"
-array << "hey"
+# array << "whats up"
+# array << "hey"
+
+# p array
+
+# Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+array = ["h", "i", "b", "c"]
+
+array[1] = 1
 
 p array
