@@ -220,8 +220,17 @@
 
 # Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
-index = 0
-while index < 101
-  puts index
-  index += 5
-end
+# index = 0
+# while index < 101
+#   puts index
+#   index += 5
+# end
+
+# Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+array = ["hello", "good morning", "bye"]
+
+array << "whats up"
+array << "hey"
+
+p array
