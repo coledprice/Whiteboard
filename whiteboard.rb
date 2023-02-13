@@ -245,8 +245,14 @@
 
 # Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-info = { :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }
+# info = { :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }
 
-p info[:first_name]
-p info[:last_name]
-p info[:email]
+# p info[:first_name]
+# p info[:last_name]
+# p info[:email]
+
+# Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+info = [{ :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }, { :first_name => "John", :last_name => "Smith", :email => "john@example.com" }, { :first_name => "Hank", :last_name => "Hill", :email => "hank@example.com" }]
+
+p info[0]
