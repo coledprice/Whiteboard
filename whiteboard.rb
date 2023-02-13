@@ -237,8 +237,16 @@
 
 # Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
 
-array = ["h", "i", "b", "c"]
+# array = ["h", "i", "b", "c"]
 
-array[1] = 1
+# array[1] = 1
 
-p array
+# p array
+
+# Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+info = { :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }
+
+p info[:first_name]
+p info[:last_name]
+p info[:email]
