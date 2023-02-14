@@ -253,6 +253,12 @@
 
 # Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-info = [{ :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }, { :first_name => "John", :last_name => "Smith", :email => "john@example.com" }, { :first_name => "Hank", :last_name => "Hill", :email => "hank@example.com" }]
+# info = [{ :first_name => "Cole", :last_name => "Price", :email => "cole@example.com" }, { :first_name => "John", :last_name => "Smith", :email => "john@example.com" }, { :first_name => "Hank", :last_name => "Hill", :email => "hank@example.com" }]
 
-p info[0]
+# p info[0]
+
+# Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+laptops = [{ :brand => "apple", :model => "mac book pro" }, { :brand => "apple", :model => "mac book air" }, { :brand => "dell", :model => "latitude" }]
+
+p laptops[1]
