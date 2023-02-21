@@ -259,6 +259,24 @@
 
 # Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-laptops = [{ :brand => "apple", :model => "mac book pro" }, { :brand => "apple", :model => "mac book air" }, { :brand => "dell", :model => "latitude" }]
+# laptops = [{ :brand => "apple", :model => "mac book pro" }, { :brand => "apple", :model => "mac book air" }, { :brand => "dell", :model => "latitude" }]
 
-p laptops[1]
+# p laptops[1]
+
+#  1. Convert an array of arrays into a hash.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+
+pairs = [[1, 3], [8, 9], [2, 16]]
+
+pairs_hash = {}
+index = 0
+
+while index < pairs.length
+  key = pairs[index][0]
+  value = pairs[index][1]
+
+  pairs_hash[key] = value
+  index += 1
+end
+
+p pairs_hash
