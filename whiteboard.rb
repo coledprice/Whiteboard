@@ -284,15 +284,37 @@
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-items = [{ id: 1, color: "blue", price: 32 }, { id: 2, color: "red", price: 12 }]
+# items = [{ id: 1, color: "blue", price: 32 }, { id: 2, color: "red", price: 12 }]
 
-items_hash = {}
+# items_hash = {}
 
-index = 0
+# index = 0
 
-while index < items.length
-  items_hash[items[index][:id]] = items[index]
-  index += 1
+# while index < items.length
+#   items_hash[items[index][:id]] = items[index]
+#   index += 1
+# end
+
+# p items_hash
+
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+#   Input: “hello, how are your porcupines today?”
+#   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+def every_other_upcase(string)
+  new_string = ""
+  index = 0
+  while index < string.length
+    if index.odd?
+      new_string << string[index].upcase
+    elsif index.even?
+      new_string << string[index]
+    end
+
+    index += 1
+  end
+  return new_string
 end
 
-p items_hash
+p every_other_upcase("hello, how are your porcupines today?")
