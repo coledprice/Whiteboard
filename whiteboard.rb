@@ -302,19 +302,37 @@
 #   Input: “hello, how are your porcupines today?”
 #   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
-def every_other_upcase(string)
-  new_string = ""
+# def every_other_upcase(string)
+#   new_string = ""
+#   index = 0
+#   while index < string.length
+#     if index.odd?
+#       new_string << string[index].upcase
+#     elsif index.even?
+#       new_string << string[index]
+#     end
+
+#     index += 1
+#   end
+#   return new_string
+# end
+
+# p every_other_upcase("hello, how are your porcupines today?")
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+def find_first_duplicate(string)
   index = 0
   while index < string.length
-    if index.odd?
-      new_string << string[index].upcase
-    elsif index.even?
-      new_string << string[index]
+    if string[index] == string[index + 1]
+      puts string[index]
+      break
     end
-
     index += 1
   end
-  return new_string
 end
 
-p every_other_upcase("hello, how are your porcupines today?")
+p find_first_duplicate("abcdefghhijkkloooop")
