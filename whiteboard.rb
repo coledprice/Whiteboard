@@ -324,15 +324,33 @@
 # Input: “abcdefghhijkkloooop”
 # Output: “h”
 
-def find_first_duplicate(string)
-  index = 0
-  while index < string.length
-    if string[index] == string[index + 1]
-      puts string[index]
-      break
-    end
-    index += 1
+# def find_first_duplicate(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == string[index + 1]
+#       puts string[index]
+#       break
+#     end
+#     index += 1
+#   end
+# end
+
+# p find_first_duplicate("abcdefghhijkkloooop")
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+def palindrome(string)
+  if string == string.reverse
+    return true
+  else
+    return false
   end
 end
 
-p find_first_duplicate("abcdefghhijkkloooop")
+p palindrome("baloney")
