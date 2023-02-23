@@ -345,12 +345,36 @@
 # Input: “baloney”
 # Output: false
 
-def palindrome(string)
-  if string == string.reverse
-    return true
-  else
-    return false
+# def palindrome(string)
+#   if string == string.reverse
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+# p palindrome("baloney")
+
+# Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+# Input: "ABCDEFG", "ABCDEFG",
+# Output: 0
+
+def different_characters(string1, string2)
+  index = 0
+  output = 0
+  while index < string1.length && index < string2.length
+    if string1[index] != string2[index]
+      output = output + 1
+    end
+    index += 1
   end
+  return output
 end
 
-p palindrome("baloney")
+p different_characters("ABCDEFG", "ABCXEOG")
