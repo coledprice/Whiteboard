@@ -365,16 +365,33 @@
 # Input: "ABCDEFG", "ABCDEFG",
 # Output: 0
 
-def different_characters(string1, string2)
-  index = 0
-  output = 0
-  while index < string1.length && index < string2.length
-    if string1[index] != string2[index]
-      output = output + 1
-    end
-    index += 1
+# def different_characters(string1, string2)
+#   index = 0
+#   output = 0
+#   while index < string1.length && index < string2.length
+#     if string1[index] != string2[index]
+#       output = output + 1
+#     end
+#     index += 1
+#   end
+#   return output
+# end
+
+# p different_characters("ABCDEFG", "ABCXEOG")
+
+# Start with an array of hashes and find the hash with the shortest name (from the :name key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+
+index = 0
+shortest = array[0]
+
+while index < array.length
+  if array[index][:name].length < shortest[:name].length
+    shortest = array[index]
   end
-  return output
+  index += 1
 end
 
-p different_characters("ABCDEFG", "ABCXEOG")
+p shortest
