@@ -382,16 +382,32 @@
 # Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+
+# index = 0
+# shortest = array[0]
+
+# while index < array.length
+#   if array[index][:name].length < shortest[:name].length
+#     shortest = array[index]
+#   end
+#   index += 1
+# end
+
+# p shortest
+
+#  1. Start with an array of numbers and create a new array with only the numbers less than 20.
+#     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+array = [2, 32, 80, 18, 12, 3]
+new_array = []
 
 index = 0
-shortest = array[0]
-
 while index < array.length
-  if array[index][:name].length < shortest[:name].length
-    shortest = array[index]
+  if array[index] < 20
+    new_array << array[index]
   end
   index += 1
 end
 
-p shortest
+p new_array
