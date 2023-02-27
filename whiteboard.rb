@@ -399,15 +399,31 @@
 #  1. Start with an array of numbers and create a new array with only the numbers less than 20.
 #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
-array = [2, 32, 80, 18, 12, 3]
-new_array = []
+# array = [2, 32, 80, 18, 12, 3]
+# new_array = []
 
+# index = 0
+# while index < array.length
+#   if array[index] < 20
+#     new_array << array[index]
+#   end
+#   index += 1
+# end
+
+# p new_array
+
+# 10. Start with an array of numbers and compute the maximum number.
+#     For example, [5, 10, 8, 3] becomes 10.
+
+numbers = [5, 10, 8, 3]
+
+max = 0
 index = 0
-while index < array.length
-  if array[index] < 20
-    new_array << array[index]
+while index < numbers.length
+  if numbers[index] > max
+    max = numbers[index]
   end
   index += 1
 end
 
-p new_array
+p max
