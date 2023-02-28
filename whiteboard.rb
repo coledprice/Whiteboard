@@ -415,15 +415,32 @@
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
 
-numbers = [5, 10, 8, 3]
+# numbers = [5, 10, 8, 3]
 
-max = 0
+# max = 0
+# index = 0
+# while index < numbers.length
+#   if numbers[index] > max
+#     max = numbers[index]
+#   end
+#   index += 1
+# end
+
+# p max
+
+#  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+#     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+
+array = ["a", "man", "a", "plan", "a", "canal", "panama"]
+shorter_than_4 = []
+
 index = 0
-while index < numbers.length
-  if numbers[index] > max
-    max = numbers[index]
+
+while index < array.length
+  if array[index].length < 4
+    shorter_than_4 << array[index]
   end
   index += 1
 end
 
-p max
+p shorter_than_4
