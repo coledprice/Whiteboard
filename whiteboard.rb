@@ -431,16 +431,33 @@
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
 
-array = ["a", "man", "a", "plan", "a", "canal", "panama"]
-shorter_than_4 = []
+# array = ["a", "man", "a", "plan", "a", "canal", "panama"]
+# shorter_than_4 = []
 
+# index = 0
+
+# while index < array.length
+#   if array[index].length < 4
+#     shorter_than_4 << array[index]
+#   end
+#   index += 1
+# end
+
+# p shorter_than_4
+
+#  4. Start with an array of numbers and compute the the minumum number.
+#     For example, [5, 10, 8, 3, 9] becomes 3.
+
+numbers = [5, 10, 8, 3, 9]
 index = 0
+minumum = numbers[index]
 
-while index < array.length
-  if array[index].length < 4
-    shorter_than_4 << array[index]
+while index < numbers.length
+  number = numbers[index]
+  if number < minumum
+    minumum = number
   end
   index += 1
 end
 
-p shorter_than_4
+p minumum
