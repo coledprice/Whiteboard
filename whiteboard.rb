@@ -448,16 +448,34 @@
 #  4. Start with an array of numbers and compute the the minumum number.
 #     For example, [5, 10, 8, 3, 9] becomes 3.
 
-numbers = [5, 10, 8, 3, 9]
+# numbers = [5, 10, 8, 3, 9]
+# index = 0
+# minumum = numbers[index]
+
+# while index < numbers.length
+#   number = numbers[index]
+#   if number < minumum
+#     minumum = number
+#   end
+#   index += 1
+# end
+
+# p minumum
+
+#  4. Start with an array of numbers and create a new array with only the even numbers.
+#     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+numbers = [2, 4, 5, 1, 8, 9, 7]
+
+even = []
+
 index = 0
-minumum = numbers[index]
 
 while index < numbers.length
-  number = numbers[index]
-  if number < minumum
-    minumum = number
+  if numbers[index].even?
+    even << numbers[index]
   end
   index += 1
 end
 
-p minumum
+p even
