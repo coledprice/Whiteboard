@@ -465,17 +465,29 @@
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
 
-numbers = [2, 4, 5, 1, 8, 9, 7]
+# numbers = [2, 4, 5, 1, 8, 9, 7]
 
-even = []
+# even = []
 
-index = 0
+# index = 0
 
-while index < numbers.length
-  if numbers[index].even?
-    even << numbers[index]
-  end
-  index += 1
+# while index < numbers.length
+#   if numbers[index].even?
+#     even << numbers[index]
+#   end
+#   index += 1
+# end
+
+# p even
+
+#  1. Use a nested loop to convert an array of number pairs into a single flattened array.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+p "please type in a number"
+
+number = gets.chomp
+if number.to_i < 0
+  puts "That's a negative number"
 end
-
-p even
