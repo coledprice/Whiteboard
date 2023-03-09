@@ -495,19 +495,39 @@
 #  1. Use a nested loop to convert an array of number pairs into a single flattened array.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
-number_pairs = [[1, 3], [8, 9], [2, 16]]
-flattened = []
+# number_pairs = [[1, 3], [8, 9], [2, 16]]
+# flattened = []
+# index = 0
+
+# while index < number_pairs.length
+#   number_pair = number_pairs[index]
+#   index1 = 0
+#   while index1 < number_pair.length
+#     number = number_pair[index1]
+#     flattened << number
+#     index1 += 1
+#   end
+#   index += 1
+# end
+
+# p flattened
+
+#  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+#     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+
+letters1 = ["a", "b", "c"]
+letters2 = ["d", "e", "f", "g"]
+combined = []
+
 index = 0
 
-while index < number_pairs.length
-  number_pair = number_pairs[index]
+while index < letters1.length
   index1 = 0
-  while index1 < number_pair.length
-    number = number_pair[index1]
-    flattened << number
+  while index1 < letters2.length
+    combined << letters1[index] + letters2[index1]
     index1 += 1
   end
   index += 1
 end
 
-p flattened
+p combined
