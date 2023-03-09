@@ -485,9 +485,29 @@
 
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
-p "please type in a number"
+# p "please type in a number"
 
-number = gets.chomp
-if number.to_i < 0
-  puts "That's a negative number"
+# number = gets.chomp
+# if number.to_i < 0
+#   puts "That's a negative number"
+# end
+
+#  1. Use a nested loop to convert an array of number pairs into a single flattened array.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+
+number_pairs = [[1, 3], [8, 9], [2, 16]]
+flattened = []
+index = 0
+
+while index < number_pairs.length
+  number_pair = number_pairs[index]
+  index1 = 0
+  while index1 < number_pair.length
+    number = number_pair[index1]
+    flattened << number
+    index1 += 1
+  end
+  index += 1
 end
+
+p flattened
