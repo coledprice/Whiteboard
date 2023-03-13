@@ -535,19 +535,41 @@
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-letters = ["a", "b", "c", "d"]
-paired = []
+# letters = ["a", "b", "c", "d"]
+# paired = []
+# index = 0
+
+# while index < letters.length
+#   index1 = 0
+#   while index1 < letters.length
+#     if index != index1
+#       paired << letters[index] + letters[index1]
+#     end
+#     index1 += 1
+#   end
+#   index += 1
+# end
+
+# p paired
+
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+letters1 = ["a", "b", "c"]
+letters2 = ["d", "e", "f", "g"]
+combined = []
+
 index = 0
 
-while index < letters.length
+while index < letters1.length
   index1 = 0
-  while index1 < letters.length
-    if index != index1
-      paired << letters[index] + letters[index1]
-    end
+  while index1 < letters2.length
+    combined << letters1[index] + letters2[index1]
     index1 += 1
   end
   index += 1
 end
 
-p paired
+p combined
