@@ -557,19 +557,59 @@
 # Input: ["a", "b", "c"], ["d", "e", "f", "g"]
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
-letters1 = ["a", "b", "c"]
-letters2 = ["d", "e", "f", "g"]
-combined = []
+# letters1 = ["a", "b", "c"]
+# letters2 = ["d", "e", "f", "g"]
+# combined = []
 
-index = 0
+# index = 0
 
-while index < letters1.length
-  index1 = 0
-  while index1 < letters2.length
-    combined << letters1[index] + letters2[index1]
-    index1 += 1
-  end
-  index += 1
-end
+# while index < letters1.length
+#   index1 = 0
+#   while index1 < letters2.length
+#     combined << letters1[index] + letters2[index1]
+#     index1 += 1
+#   end
+#   index += 1
+# end
 
-p combined
+# p combined
+
+# Find the largest product of any two numbers within a given array.
+
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+
+# numbers = [5, -2, 1, -9, -7, 2, 6]
+# largest_product = 0
+# products = []
+# index = 0
+
+# while index < numbers.length
+#   index1 = 1
+#   while index1 < numbers.length
+#     products << numbers[index] * numbers[index1]
+#     index1 += 1
+#   end
+#   index += 1
+# end
+
+# index2 = 0
+
+# while index2 < products.length
+#   if products[index2] > largest_product
+#     largest_product = products[index2]
+#   end
+#   index2 += 1
+# end
+# p products
+# p largest_product
+
+
+# 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
+
+number = 10
+ if number == 10
+  p 0
+ else 
+  p -1
+ end
