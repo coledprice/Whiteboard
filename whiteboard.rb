@@ -721,7 +721,14 @@
 
 # 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 
-first = "Cole"
-last = "Price"
+# first = "Cole"
+# last = "Price"
 
-puts first + " " + last
+# puts first + " " + last
+
+# 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+first = "cole"
+last = "price"
+
+puts "#{first} #{last}"
