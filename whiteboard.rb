@@ -825,7 +825,37 @@
 
 # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
-puts "please enter a word"
+# puts "please enter a word"
 
-word = gets.chomp
-puts word.reverse
+# word = gets.chomp
+# puts word.reverse
+
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
+
+# puts "enter a number"
+# number = gets.chomp
+
+# puts number.to_i * 10
+
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+
+# puts "enter two words"
+# word1 = gets.chomp
+# word2 = gets.chomp
+
+# puts "#{word1.upcase} #{word2.upcase}"
+
+
+# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+# puts "enter a word"
+# word = gets.chomp
+# puts word.length 
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+puts "enter a number"
+number = gets.chomp
+if number.to_i < 0
+  puts "That's a negative number"
+end
