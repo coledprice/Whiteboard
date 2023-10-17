@@ -1043,7 +1043,95 @@
 
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
-countries = ["China", "Japan", "Thailand"]
-countries << "Vietnam"
-p countries 
+# countries = ["China", "Japan", "Thailand"]
+# countries << "Vietnam"
+# p countries 
+
+
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+# hash = { first_name: "Barry", last_name: "Rogers", email: "brogers@example.com"}
+
+# p hash[:first_name]
+# p hash[:last_name]
+# p hash[:email]
+
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+# people = [
+#   {first_name: "Bob", last_name: "Price"},
+#   {first_name: "Tom", last_name: "Rice"},
+#   {first_name: "Terry", last_name: "Peeps"} ]
+
+#   p people[0][:first_name]
+#   p people[0][:last_name]
+
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+# food_items = {hotdog: 1.50, burger: 3.50, corndog: 1}
+
+# food_items[:ice_cream] = 2
+
+# p food_items
+
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+# book = {book_title: "The Wave", author: "Colin Risk", pages: 100, language: "English"}
+
+# p book[:book_title]
+# p book[:author]
+# p book[:pages]
+# p book[:language]
+
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+# books = [ 
+#   {book_title: "The Wave", author: "Colin Risk", pages: 100, language: "English"},
+#   {book_title: "The Tree", author: "Cole Rise", pages: 55, language: "English"},
+#   {book_title: "Camping Birds", author: "Linda Fisk", pages: 120, language: "English"}
+
+# ]
+
+# p books[2][:author]
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+# states = {pennsylvania: "Harrisburg", north_carolina: "Raleigh", texas: "Houston"}
+
+# states[:florida] = "Jacksonville"
+
+# p states
+
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# laptop = {brand: "Mac", model: "macbook pro", year: 2022}
+
+# p laptop[:brand]
+# p laptop[:model]
+# p laptop[:year]
+
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# laptops = [
+#   {brand: "Mac", model: "macbook pro"},
+#   {brand: "Mac", model: "note"},
+#   {brand: "Mac", model: "macbook air"}
+# ]
+
+# p laptops[1][:model]
+
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+# definitions = {apple: "its a fruit", car: "its a automotive vehicle"}
+
+# definitions[:dog] = "its a mans best friend"
+# p definitions
+
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = {brand: "hanes", color: "white", size: "Large"}
+
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
 
