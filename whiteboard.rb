@@ -793,8 +793,15 @@
 
 # 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
 
-x = "Philadelphia"
-y = "Cleveland"
-z = "Asheville"
+# x = "Philadelphia"
+# y = "Cleveland"
+# z = "Asheville"
 
-puts x + " " + "is larger than" + " " + y + ", " "and is 9 hrs away from" + " " + z 
+# puts x + " " + "is larger than" + " " + y + ", " "and is 9 hrs away from" + " " + z 
+
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
+
+puts "please type in a word"
+word = gets.chomp
+
+puts word.upcase
