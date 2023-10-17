@@ -776,7 +776,17 @@
 
 # 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
 
-books_title = "The House"
-author = "James Cohen"
+# books_title = "The House"
+# author = "James Cohen"
 
-p "#{author} wrote the book #{books_title}"
+# p "#{author} wrote the book #{books_title}"
+
+# 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+puts "Please enter the password"
+password = gets.chomp
+if password == "Joshua"
+  puts "Shall we play a game?"
+else
+  puts "Access denied"
+end
