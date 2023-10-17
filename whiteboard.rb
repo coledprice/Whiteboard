@@ -870,9 +870,19 @@
 
 # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
 
-puts "enter a word"
-word = gets.chomp
-if word.length > 5
-  puts "That's a long word"
+# puts "enter a word"
+# word = gets.chomp
+# if word.length > 5
+#   puts "That's a long word"
+# end
+
+# 1. Write a while loop to print the numbers 1 through 10.
+
+index = 1
+
+while index < 11
+  puts index
+index += 1
 end
+
 
