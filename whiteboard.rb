@@ -960,12 +960,20 @@
 
 # 10. Write a while loop that prints the even numbers from 2 to 40.
 
-index = 2 
-while index <= 40
-  if index.even?
-    puts index
-  end
-  index += 1
-end
+# index = 2 
+# while index <= 40
+#   if index.even?
+#     puts index
+#   end
+#   index += 1
+# end
 
+# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+array = ["dog", "cat", "bird"]
+
+array << "whale"
+array << "turkey"
+
+p array
 
