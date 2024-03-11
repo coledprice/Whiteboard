@@ -1209,8 +1209,306 @@
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
 
-def times_plus(number)
-  return (number * 10) + 30
+# def times_plus(number)
+#   return (number * 10) + 30
+# end
+
+# p times_plus(5)
+
+#  1. Start with an array of numbers and create a new array with each number times 3.
+#     For example, [1, 2, 3] becomes [3, 6, 9].
+
+# array = [1, 2, 3]
+# new_array = []
+# index = 0 
+
+# while index < array.length
+#   new_array << array[index] * 3
+#   index += 1
+# end
+
+# p new_array
+
+#  2. Start with an array of strings and create a new array with each string upcased.
+#     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+# array = ["hello", "goodbye"]
+# new_array = []
+# index = 0 
+# while index < array.length
+#   new_array << array[index].upcase
+#   index += 1
+# end
+
+# p new_array
+
+#  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+
+# array = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+# new_array = []
+
+# index = 0
+# while index < array.length
+#   new_array << array[index][:name]
+#   index += 1
+# end
+
+# p new_array
+
+#  4. Start with an array of numbers and create a new array with each number plus 7.
+#     For example, [1, 2, 3] becomes [8, 9, 10].
+
+# array = [1, 2, 3]
+# index = 0
+# new_array = []
+
+# while index < array.length
+#   new_array << array[index] + 7
+#   index += 1
+# end
+
+# p new_array
+
+#  5. Start with an array of strings and create a new array with each string's length.
+#     For example, ["hello", "goodbye"] becomes [5, 7].
+
+# strings = ["hello", "goodbye"]
+
+# new_array = []
+
+# index = 0
+
+# while index < strings.length
+#   new_array << strings[index].length
+#   index += 1
+# end
+
+# p new_array
+
+#  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+# array = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+# ages = []
+
+# index = 0 
+
+# while index < array.length
+#   ages << array[index][:age]
+#   index += 1
+# end
+
+# p ages
+
+#  7. Start with an array of numbers and create a new array with each number divided by 2.
+#     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+
+# array = [1, 2, 3]
+# new_array = []
+# index = 0 
+
+# while index < array.length
+#   new_array << array[index] / 2.0
+#   index += 1
+# end
+
+# p new_array
+
+#  8. Start with an array of strings and create a new array with each string's first letter only.
+#     For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+# array = ["hello", "goodbye"] 
+# new_array = []
+# index = 0
+
+# while index < array.length
+#   new_array << array[index][0]
+#   index += 1
+# end
+
+# p new_array
+
+# 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+
+# array = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# new_array = []
+# index = 0
+
+# while index < array.length
+
+  # 10. Start with an array of numbers and create a new array with each number converted into a string.
+#     For example, [1, 2, 3] becomes ["1", "2", "3"].
+  
+# array = [1, 2, 3]
+# new_array = []
+# index = 0
+
+# while index < array.length
+#   new_array << array[index].to_s
+#   index += 1
+# end
+
+# p new_array
+
+#  1. Start with an array of numbers and create a new array with only the numbers less than 20.
+#     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+# numbers = [2, 32, 80, 18, 12, 3] 
+# less_than_20 = []
+# index = 0
+
+# while index < numbers.length
+#   if numbers[index] < 20 
+#    less_than_20 << numbers[index]
+#   end
+#   index += 1
+# end
+
+# p less_than_20
+
+#  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
+#     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+# array = ["winner", "winner", "chicken", "dinner"]
+# new_array = []
+# index = 0
+# while index < array.length
+#   if array[index][0] == "w"
+#     new_array << array[index]
+#   end
+#   index += 1
+# end
+
+# p new_array
+
+#  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+# array =  [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+
+# new_array = []
+# index = 0 
+# while index < array.length
+#   if array[index][:price] > 5
+#     new_array << array[index]
+#   end
+#   index += 1
+# end
+
+# p new_array
+
+# def plusMinus(arr)
+#   index = 0
+#   pos = 0
+#   neg = 0
+#   zero = 0
+#   while index < arr.length
+#       if arr[index] > 0 
+#           pos = pos + 1
+#           elsif arr[index] < 0
+#               neg = neg + 1
+#           else arr[index] == 0
+#               zero = zero + 1
+#       end
+#       index += 1
+#   end
+#   p pos.to_f / arr.length
+#   p neg.to_f / arr.length
+#   p zero.to_f / arr.length
+
+  
+ 
+# end
+
+#  plusMinus([-4, 3, -9, 0, 4, 1])
+
+# def staircase(n)
+#   index = n - 1
+#   string = (" " * n)
+#   while index > -1
+#  string[index] = "#"
+#  index -= 1
+#  p string 
+#   end
+  
+
+# end
+
+# staircase(6)
+
+# def miniMaxSum(arr)
+#     min = 0
+#     max = 0
+#     index = 0
+#     while index < arr.length
+
+
+# end
+
+# p miniMaxSum([1, 2, 3, 4, 5])
+
+
+# subs = []
+# subjects.each do |subject|
+#     subs << subject.split
+#     subs.each do |sub|
+#         if sub == spam_words
+#             p "spam"
+#         else
+#             p "not_spam"
+#         end
+#     end
+# end
+
+
+# def isPangram(pangram)
+#   pangram.downcase.each_char.with_object(('a'..'z').to_set) do |c,st|
+#     st.delete(c)
+#     return true if s.empty?
+#   end
+#   false
+
+# end
+
+# isPangram("we the quick brown fox jump over the lazy dog")
+
+# ["a", *["b", "c"], "d"] 
+
+
+# def birthdayCakeCandles(candles)
+#   index = 0
+#   highest_candle = candles[0]
+#   while index < candles.length
+#       if candles[index] > highest_candle
+#           highest_candle = candles[index]
+#       end
+#       index += 1
+#   end
+#   return highest_candle
+      
+  
+  
+
+# end
+
+# p birthdayCakeCandles([2, 3, 5, 4, 1])
+
+
+def timeConversion(s)
+  if s[0] == "0" && s[1] == "0" && s[8] == "A"
+    s[0] = "0"
+    s[1] = "0"
+    s.slice!"AM"
+  end
+  
+return s
+
+
 end
 
-p times_plus(5)
+
+p timeConversion("00:01:00AM")
