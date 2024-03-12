@@ -1479,36 +1479,22 @@
 # ["a", *["b", "c"], "d"] 
 
 
-# def birthdayCakeCandles(candles)
-#   index = 0
-#   highest_candle = candles[0]
-#   while index < candles.length
-#       if candles[index] > highest_candle
-#           highest_candle = candles[index]
-#       end
-#       index += 1
-#   end
-#   return highest_candle
+def birthdayCakeCandles(candles)
+  index = 0
+  highest_candle = candles[0]
+  while index < candles.length
+      if candles[index] > highest_candle
+          highest_candle = candles[index]
+      end
+      index += 1
+  end
+  return highest_candle
       
   
   
 
-# end
-
-# p birthdayCakeCandles([2, 3, 5, 4, 1])
-
-
-def timeConversion(s)
-  if s[0] == "0" && s[1] == "0" && s[8] == "A"
-    s[0] = "0"
-    s[1] = "0"
-    s.slice!"AM"
-  end
-  
-return s
-
-
 end
 
+p birthdayCakeCandles([2, 3, 5, 4, 1])
 
-p timeConversion("00:01:00AM")
+
