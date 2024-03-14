@@ -1440,16 +1440,16 @@
 
 # staircase(6)
 
-# def miniMaxSum(arr)
-#     min = 0
-#     max = 0
-#     index = 0
-#     while index < arr.length
+def miniMaxSum(arr)
+    min = 0
+    max = 0
+    index = 0
+    while index < arr.length
 
 
-# end
+end
 
-# p miniMaxSum([1, 2, 3, 4, 5])
+p miniMaxSum([1, 2, 3, 4, 5])
 
 
 # subs = []
@@ -1479,22 +1479,22 @@
 # ["a", *["b", "c"], "d"] 
 
 
-def birthdayCakeCandles(candles)
-  index = 0
-  highest_candle = candles[0]
-  while index < candles.length
-      if candles[index] > highest_candle
-          highest_candle = candles[index]
-      end
-      index += 1
-  end
-  return highest_candle
+# def birthdayCakeCandles(candles)
+#   index = 0
+#   highest_candle = candles[0]
+#   while index < candles.length
+#       if candles[index] > highest_candle
+#           highest_candle = candles[index]
+#       end
+#       index += 1
+#   end
+#   return highest_candle
       
   
   
 
-end
+# end
 
-p birthdayCakeCandles([2, 3, 5, 4, 1])
+# p birthdayCakeCandles([2, 3, 5, 4, 1])
 
 
